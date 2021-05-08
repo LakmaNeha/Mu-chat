@@ -37,6 +37,7 @@
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
+  padding: 1rem;
   
  }
 
@@ -61,7 +62,8 @@
      max-width: 960px;
      color: white;
      width: 100%;
-     border-radius: 10px;
+     border-top-left-radius: 10px;
+     border-top-right-radius: 10px;
      height: 10vh;
      min-height: 50px;
      
@@ -97,7 +99,7 @@
     padding: 1rem;
     border-radius: 10px;
 }
-input {
+.msginput {
     line-height: 5em;
     width: 100%;
     font-weight: bold;
@@ -108,7 +110,7 @@ input {
     padding: 0 10px;
     flex-grow:2;
   }
-  form {
+  .msgform {
     height: 10vh;
     position: fixed;
     bottom: 0;
@@ -145,4 +147,72 @@ input {
     
   } 
 
- 
+  .backdrop{
+  
+    margin: auto;
+    background: #374151;
+    padding: 10px;
+    height: 90vh;
+    margin: 10vh 0 10vh;
+    overflow-y: scroll;
+    overflow-anchor: none;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .hide{
+    display:none;
+  }
+  .listOfRooms{
+    margin: auto;
+    padding: 1rem;
+    font-size: medium;
+    color: white;
+    
+  }
+  .addbtn{
+    background-color: orange;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    max-width: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+  .createForm{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .createForm input{
+    padding: 1rem;
+    border: 3px solid orange;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 1rem;
+    
+
+  }
+  .saveBtn{
+    margin-right: 8rem;
+    border: none;
+    outline: none;
+    background-color: rgb(29, 194, 29);
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 3px;
+
+  }
+  .cancelBtn{
+   
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
